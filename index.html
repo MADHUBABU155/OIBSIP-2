@@ -11,11 +11,33 @@
       color: #333;
       margin: 0;
       padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 20px;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.2;
+      pointer-events: none;
     }
 
     h1 {
       text-align: center;
-      color: #333;
+      color: #000000;
       margin-top: 50px;
       font-size: 36px;
       letter-spacing: 2px;
@@ -23,34 +45,19 @@
       margin-bottom: 20px;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #FFFFFF;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      background-image: url('https://www.newsclick.in/sites/default/files/styles/responsive_885/public/2017-10/Che%20Guevara2.jpg?itok=_nXRoI4t');
-      background-size: cover;
-      background-position: center;
-    }
-
-    img {
-      display: none; /* Hide the original image */
-    }
-
     p {
       font-size: 18px;
       line-height: 1.5;
       margin-bottom: 20px;
       text-align: justify;
+      color: #000000;
     }
 
     .quote {
       font-style: italic;
       text-align: center;
       font-size: 24px;
-      color: #333;
+      color: #000000;
       margin-bottom: 30px;
     }
 
@@ -63,8 +70,8 @@
 </head>
 <body>
   <div class="container">
+    <img class="watermark" src="https://freesvg.org/img/Archie-Che-Guevara.png" alt="Watermark">
     <h1>Admiring Che Guevara</h1>
-    <!-- Remove the <img> tag since the image is now set as the background image -->
     <p>Che Guevara was an Argentine Marxist revolutionary, physician, author, guerrilla leader, diplomat, and military theorist. He played a key role in the Cuban Revolution and became a symbol of revolution and anti-imperialism.</p>
     <p>What I admire most about Che Guevara is his unwavering dedication to fighting for social justice and equality. He was not afraid to challenge the status quo and stand up for the oppressed. His commitment to the liberation of Latin America and his belief in the power of the people to bring about change continue to inspire me.</p>
     <p>Che Guevara's famous quote, "Hasta la victoria siempre" (Always until victory), resonates with me deeply. It reminds us to persevere in our struggles and never give up on our ideals.</p>
